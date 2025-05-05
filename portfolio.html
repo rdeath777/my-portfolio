@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio_style.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <img src="logo4.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <div class="intro-section">
+                <div class="intro-text">
+                    <h1 class="intro-greeting">Hello, I'm</h1>
+                    <h2 class="intro-name">Isaac Areil D. Sermona</h2>
+                    <h3 class="intro-title">Bachelor of Science in Information Tecnology Student</h3>
+                    <p class="intro-description">I’m a dedicated IT student from Iloilo City, combining academic excellence with hands-on experience in web development. Let’s collaborate to create innovative solutions!</p>
+                    <a href="documents/DSWD_Resume.pdf" target="_blank" class="download-cv">Download CV</a>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">I</a>
+                        <a href="#" class="social-icon">A</a>
+                        <a href="#" class="social-icon">D</a>
+                        <a href="#" class="social-icon">S</a>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <div class="galaxy-circle">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <img src="pic2.png" alt="Isaac Areil D. Sermona" class="profile-img">
+                </div>
+            </div>
+            <div class="stats-section">
+                <div class="stat">
+                    <h3 class="stat-number">2+</h3>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">3</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">3+</h3>
+                    <p class="stat-label">Certifications Earned</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="grid">
+                <div class="card cert-card">
+                    <h3>Certificate of Attendance</h3>
+                    <img src="certificates/cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal('certificates/cert1.jpg')">
+                    <p>Student Internship Program Orientation Certificate.</p>
+                </div>
+                <div class="card cert-card">
+                    <h3>Certificate of Completion</h3>
+                    <img src="certificates/cert2.jpeg" alt="Certificate 2" class="cert-img" onclick="openModal('certificates/cert2.jpeg')">
+                    <p>Wadhwani Employability skills - Job Ready Certificate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents">
+            <h2>Documents</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>DSWD SIP 1</h3>
+                    <a href="documents/DSWD_SIP1.pdf" target="_blank" class="doc-link">View DSWD_SIP1.pdf</a>
+                    <p>This document is SIP 1 that contains student basic information.</p>
+                </div>
+                <div class="card">
+                    <h3>DSWD SIP 2</h3>
+                    <a href="documents/DSWD_SIP2.pdf" target="_blank" class="doc-link">View DSWD_SIP2.pdf</a>
+                    <p>This document is SIP 2 that contains program agreement.</p>
+                </div>
+                <div class="card dropdown">
+                    <h3 class="dropdown-header">
+                        Other Scanned Documents
+                        <span class="dropdown-icon">></span>
+                    </h3>
+                    <div class="dropdown-content">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-header">Medical Records <span class="dropdown-icon">></span></a>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="openModal('documents/CBC.jpg', event)">CBC</a>
+                                <a href="#" onclick="openModal('documents/Urine.jpg', event)">Urine Test</a>
+                                <a href="#" onclick="openModal('documents/Stool.jpg', event)">Stool Test</a>
+                                <a href="#" onclick="openModal('documents/Chest PA.jpg', event)">Chest PA</a>
+                                <a href="#" onclick="openModal('documents/Chest X-ray.jpg', event)">Chest X-ray</a>
+                                <a href="#" onclick="openModal('documents/physical.jpg', event)">Physical Test</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="about-me">
+                <h3>About Me</h3>
+                <p>I'm Isaac Areil D. Sermona, a passionate and driven IT student living in Mandurriao, Iloilo City. Currently pursuing a Bachelor of Science in Information Technology at Iloilo Science and Technology University, I bring a strong academic foundation complemented by hands-on experience in web development. As a freelance web developer and a bartender/cook at CowGirls Resto Bar, I blend technical expertise with a collaborative spirit and innovative mindset.</p>
+                <p>My skill set includes proficiency in Python, PHP, HTML, and CSS, alongside frameworks and tools like MySQL, MongoDB, and Microsoft Office. I'm adept at basic network server administration, data analytics with R and Python, and possess strong problem-solving and communication skills. My certifications, including the Government Internship Program (Unlad Kabataan Program), Blended Training on Community-Based Disaster Risk Reduction and Management, and Integrated Computer Literacy Training Program (SCALA Graduate), reflect my commitment to continuous learning and community impact.</p>
+                <p>Explore my portfolio to discover my projects, achievements, and dedication to delivering meaningful contributions to the tech industry.</p>
+            </div>
+            <div class="services-section">
+                <h2 class="services-title">What I Do</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-icon">🌐</span>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and modern websites using HTML, CSS, and PHP.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">📊</span>
+                        <h3>Data Analytics</h3>
+                        <p>Analyzing data with Python and R to derive actionable insights.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">🗄️</span>
+                        <h3>Database Setup</h3>
+                        <p>Managing databases with MySQL and MongoDB for efficient data storage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Resume</h3>
+                    <a href="documents/DSWD_Resume.pdf" target="_blank" class="doc-link">View Resume</a>
+                    <p>My professional resume detailing my skills and experience.</p>
+                </div>
+                <div class="card">
+                    <h3>Application Letter</h3>
+                    <a href="documents/DSWD_ApplicationLetter.pdf" target="_blank" class="doc-link">View Application Letter</a>
+                    <p>My application letter showcasing my intent and qualifications.</p>
+                </div>
+            </div>
+            <div class="projects-section">
+                <h2 class="services-title">Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>SWD Law Monitoring System</h3>
+                        <img src="pic3.jpeg" alt="Project 1" class="project-img">
+                        <p>A monitoring system with data visualization tool.</p>
+                    </div>
+                    <div class="card">
+                        <h3>"ProductLoca"- A product locator system</h3>
+                        <img src="pic4.jpeg" alt="Project 2" class="project-img">
+                        <p>A web application for locating products inside a department store or a mall.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for certificate and document expansion -->
+    <div id="certModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <a href="tel:+09667555398" class="contact-link">📞 09667555398</a>
+            <a href="mailto:isaacsermona@gmail.com" class="contact-link">✉️ isaacsermona@gmail.com</a>
+        </div>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(src, event) {
+            event.preventDefault(); // Prevent default link behavior (scrolling to #)
+            const modal = document.getElementById("certModal");
+            const modalImg = document.getElementById("modalImg");
+            // Store the current scroll position
+            window.scrollPosition = window.scrollY;
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("certModal");
+            modal.style.display = "none";
+            // Restore the scroll position to the Documents section
+            if (window.scrollPosition) {
+                window.scrollTo(0, window.scrollPosition);
+            } else {
+                // If no scroll position is stored, scroll to the Documents section
+                document.querySelector('#documents').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById("certModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
