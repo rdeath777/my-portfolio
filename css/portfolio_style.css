@@ -108,7 +108,7 @@ p {
 }
 
 .card h3 {
-    color: #e53935;
+    color: #10E03A;
     margin-bottom: 1rem;
 }
 
@@ -117,6 +117,9 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cert-img {
@@ -238,7 +241,7 @@ footer p {
 
 .dropdown-icon {
     font-size: 1.2rem;
-    color: #ff0000;
+    color: #10E03A;
     transition: transform 0.3s ease;
 }
 
@@ -330,7 +333,7 @@ footer p {
 
 .intro-name {
     font-size: 3rem;
-    color: #e53935;
+    color: #10E03A;
     margin-bottom: 0.5rem;
     animation: fadeIn 1s ease-in-out 0.3s;
     animation-fill-mode: backwards;
@@ -355,7 +358,7 @@ footer p {
 .download-cv {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #e53935;
+    background-color: #10E03A;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -390,10 +393,13 @@ footer p {
     transition: background-color 0.3s ease;
     animation: fadeIn 1s ease-in-out 1.5s;
     animation-fill-mode: backwards;
+    border-radius: 15px;
+    border: 1px solid #10E03A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: #ff0000;
+    background-color: #10E03A;
 }
 
 .intro-image {
@@ -493,7 +499,7 @@ footer p {
 
 .stat-number {
     font-size: 2.5rem;
-    color: #e53935;
+    color: #10E03A;
     margin-bottom: 0.5rem;
 }
 
@@ -561,7 +567,7 @@ footer p {
 }
 
 .service-card h3 {
-    color: #e53935;
+    color: #10E03A;
     margin-bottom: 1rem;
 }
 
@@ -583,7 +589,7 @@ footer p {
 }
 
 .about-me h3 {
-    color: #e53935;
+    color: #10E03A;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     text-align: center;
