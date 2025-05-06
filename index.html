@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Isaac Areil D. Sermona, a BSIT student specializing in web development and data analytics.">
+    <meta name="keywords" content="Isaac Sermona, portfolio, web development, IT student, Iloilo">
     <title>My Portfolio</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" href="css/portfolio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        
         <nav>
             <img src="logo4.png" alt="Logo" class="logo">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#documents">Documents</a></li>
-                <li><a href="#profile">Profile</a></li>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#certificates" aria-label="Certificates">Certificates</a></li>
+                <li><a href="#documents" aria-label="Documents">Documents</a></li>
+                <li><a href="#profile" aria-label="Profile">Profile</a></li>
             </ul>
         </nav>
     </header>
@@ -27,14 +28,12 @@
                 <div class="intro-text">
                     <h1 class="intro-greeting">Hello, I'm</h1>
                     <h2 class="intro-name">Isaac Areil D. Sermona</h2>
-                    <h3 class="intro-title">Bachelor of Science in Information Tecnology Student</h3>
+                    <h3 class="intro-title">Bachelor of Science in Information Technology Student</h3>
                     <p class="intro-description">I’m a dedicated IT student from Iloilo City, combining academic excellence with hands-on experience in web development. Let’s collaborate to create innovative solutions!</p>
                     <a href="documents/DSWD_Resume.pdf" target="_blank" class="download-cv">Download CV</a>
                     <div class="social-links">
-                        <a href="#" class="social-icon">I</a>
-                        <a href="#" class="social-icon">A</a>
-                        <a href="#" class="social-icon">D</a>
-                        <a href="#" class="social-icon">S</a>
+                        <a href="https://linkedin.com/in/yourprofile" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yourprofile" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="intro-image">
@@ -69,12 +68,12 @@
             <div class="grid">
                 <div class="card cert-card">
                     <h3>Certificate of Attendance</h3>
-                    <img src="certificates/cert1.jpg" alt="Certificate 1" class="cert-img" onclick="openModal('certificates/cert1.jpg')">
+                    <img src="certificates/cert1.jpg" alt="Certificate 1" class="cert-img" loading="lazy" onclick="openModal('certificates/cert1.jpg')">
                     <p>Student Internship Program Orientation Certificate.</p>
                 </div>
                 <div class="card cert-card">
                     <h3>Certificate of Completion</h3>
-                    <img src="certificates/cert2.jpeg" alt="Certificate 2" class="cert-img" onclick="openModal('certificates/cert2.jpeg')">
+                    <img src="certificates/cert2.jpeg" alt="Certificate 2" class="cert-img" loading="lazy" onclick="openModal('certificates/cert2.jpeg')">
                     <p>Wadhwani Employability skills - Job Ready Certificate.</p>
                 </div>
             </div>
@@ -100,14 +99,14 @@
                     </h3>
                     <div class="dropdown-content">
                         <div class="dropdown">
-                            <a href="#" class="dropdown-header">Medical Records <span class="dropdown-icon">></span></a>
+                            <a class="dropdown-header">Medical Records <span class="dropdown-icon">></span></a>
                             <div class="dropdown-content">
-                                <a href="#" onclick="openModal('documents/CBC.jpg', event)">CBC</a>
-                                <a href="#" onclick="openModal('documents/Urine.jpg', event)">Urine Test</a>
-                                <a href="#" onclick="openModal('documents/Stool.jpg', event)">Stool Test</a>
-                                <a href="#" onclick="openModal('documents/Chest PA.jpg', event)">Chest PA</a>
-                                <a href="#" onclick="openModal('documents/Chest X-ray.jpg', event)">Chest X-ray</a>
-                                <a href="#" onclick="openModal('documents/physical.jpg', event)">Physical Test</a>
+                                <a onclick="openModal('documents/CBC.jpg', event)">CBC</a>
+                                <a onclick="openModal('documents/Urine.jpg', event)">Urine Test</a>
+                                <a onclick="openModal('documents/Stool.jpg', event)">Stool Test</a>
+                                <a onclick="openModal('documents/Chest PA.jpg', event)">Chest PA</a>
+                                <a onclick="openModal('documents/Chest X-ray.jpg', event)">Chest X-ray</a>
+                                <a onclick="openModal('documents/physical.jpg', event)">Physical Test</a>
                             </div>
                         </div>
                     </div>
@@ -160,12 +159,12 @@
                 <div class="grid">
                     <div class="card">
                         <h3>SWD Law Monitoring System</h3>
-                        <img src="pic3.jpeg" alt="Project 1" class="project-img">
+                        <img src="pic3.jpeg" alt="Project 1" class="project-img" loading="lazy">
                         <p>A monitoring system with data visualization tool.</p>
                     </div>
                     <div class="card">
                         <h3>"ProductLoca"- A product locator system</h3>
-                        <img src="pic4.jpeg" alt="Project 2" class="project-img">
+                        <img src="pic4.jpeg" alt="Project 2" class="project-img" loading="lazy">
                         <p>A web application for locating products inside a department store or a mall.</p>
                     </div>
                 </div>
@@ -173,9 +172,8 @@
         </section>
     </div>
 
-    <!-- Modal for certificate and document expansion -->
-    <div id="certModal" class="modal">
-        <span class="close" onclick="closeModal()">×</span>
+    <div id="certModal" class="modal" role="dialog" aria-modal="true">
+        <span class="close" onclick="closeModal()" aria-label="Close Modal">×</span>
         <img class="modal-content" id="modalImg">
     </div>
 
@@ -187,36 +185,57 @@
         <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
 
+    <button id="backToTop" aria-label="Back to Top">↑</button>
+
     <script>
+        // Modal Functions
         function openModal(src, event) {
-            event.preventDefault(); // Prevent default link behavior (scrolling to #)
+            event.preventDefault();
             const modal = document.getElementById("certModal");
             const modalImg = document.getElementById("modalImg");
-            // Store the current scroll position
-            window.scrollPosition = window.scrollY;
-            modal.style.display = "block";
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+            document.body.classList.add('modal-open');
+            modal.style.display = "flex";
             modalImg.src = src;
         }
 
         function closeModal() {
             const modal = document.getElementById("certModal");
             modal.style.display = "none";
-            // Restore the scroll position to the Documents section
-            if (window.scrollPosition) {
-                window.scrollTo(0, window.scrollPosition);
-            } else {
-                // If no scroll position is stored, scroll to the Documents section
-                document.querySelector('#documents').scrollIntoView({ behavior: 'smooth' });
-            }
+            document.body.classList.remove('modal-open');
+            const scrollPosition = sessionStorage.getItem('scrollPosition') || document.querySelector('#documents').offsetTop;
+            window.scrollTo(0, scrollPosition);
         }
 
-        // Close modal when clicking outside the image
         window.onclick = function(event) {
             const modal = document.getElementById("certModal");
             if (event.target === modal) {
                 closeModal();
             }
         }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeModal();
+        });
+
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
+    <script src="js/accessibility.js"></script>
 </body>
 </html>
